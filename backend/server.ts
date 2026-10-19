@@ -11,7 +11,7 @@ app.use(express.json());
 app.get("/api/garderie", (_req, res) => {
   res.json({
     nom: "Les Petits Explorateurs",
-    adresse: "Sousse, Tunisie",
+    adresse: "Tozeur, Tunisie",
     email: "contact@petitsexplorateurs.tn",
     description: "Une garderie chaleureuse pour apprendre et grandir."
   });

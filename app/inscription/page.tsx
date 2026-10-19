@@ -1,11 +1,16 @@
 
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import "./inscription.css";
 
 export default function InscriptionPage() {
   const [message, setMessage] = useState("");
+  const [today, setToday] = useState("");
+
+useEffect(() => {
+  setToday(new Date().toISOString().split("T")[0]);
+}, []);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -135,7 +140,7 @@ export default function InscriptionPage() {
                 type="date"
                 className="form-control"
                 required
-                max={new Date().toISOString().split("T")[0]}
+                max={today || undefined}
               />
             </div>
 
