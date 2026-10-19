@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Garderie - Les Petits Explorateurs
 
-## Getting Started
+## Présentation
+Application web réalisée avec Next.js dans le cadre du TP de développement Full Stack. Elle présente une garderie pour enfants, ses services et ses activités.
 
-First, run the development server:
+## Technologies utilisées
+- Next.js et React
+- TypeScript
+- Bootstrap 5
+- Node.js et Express
+- Git et GitHub
 
+## Fonctionnalités
+- Page d'accueil responsive
+- Navigation entre les sections
+- Présentation des services de la garderie
+- API REST pour les informations de la garderie, les services et les activités
+- Récupération des données du backend dans le frontend
+
+## Installation
+
+### 1. Cloner le projet
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/amalmuk/garderie-app.git
+cd garderie-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Installer les dépendances
+```bash
+npm install
+npm install express cors
+npm install -D tsx @types/express @types/cors
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Lancer le backend
+Dans un premier terminal :
+```bash
+npm run backend
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Le backend utilise le port 4000.
 
-## Learn More
+### 4. Lancer le frontend
+Dans un deuxième terminal :
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Ouvrir ensuite http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Endpoints API
+- `GET /api/garderie` : informations de la garderie
+- `GET /api/services` : liste des services
+- `GET /api/activites` : liste des activités
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Les endpoints sont disponibles sur `http://localhost:4000`.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Auteur
+Projet réalisé dans le cadre du TP Full Stack.
