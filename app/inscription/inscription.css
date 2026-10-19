@@ -1,0 +1,138 @@
+
+.inscription-page {
+  min-height: 100vh;
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #f0f8ff, #fff3ed);
+  color: #26344a;
+}
+
+.inscription-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.inscription-back {
+  display: inline-block;
+  color: #4965a8;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.inscription-back:hover {
+  color: #263f83;
+  text-decoration: underline;
+}
+
+.inscription-header {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.inscription-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.inscription-header h1 {
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-weight: 800;
+  color: #344e87;
+  margin-bottom: 12px;
+}
+
+.inscription-header p {
+  color: #68758a;
+  font-size: 1.05rem;
+}
+
+.inscription-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(44, 62, 100, 0.12);
+  border: 1px solid #e8edf6;
+}
+
+.inscription-form h2 {
+  color: #344e87;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inscription-form .form-label {
+  color: #37445a;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.inscription-form .form-control {
+  min-height: 48px;
+  border: 1px solid #dce3ef;
+  border-radius: 10px;
+  padding: 11px 13px;
+  background-color: #fbfcff;
+}
+
+.inscription-form textarea.form-control {
+  min-height: 110px;
+}
+
+.inscription-form .form-control:focus {
+  border-color: #7189cf;
+  box-shadow: 0 0 0 3px rgba(113, 137, 207, 0.17);
+  background-color: #ffffff;
+}
+
+.inscription-form hr {
+  border-color: #e5eaf3;
+  margin: 30px 0;
+}
+
+.inscription-required {
+  color: #758096;
+  font-size: 0.88rem;
+  margin-top: 20px;
+}
+
+.inscription-submit {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #526fbd, #7659a8);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.inscription-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(82, 111, 189, 0.25);
+}
+
+.inscription-message {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #e9f7ef;
+  color: #21653c;
+  border: 1px solid #c9ead5;
+}
+
+@media (max-width: 576px) {
+  .inscription-page {
+    padding: 30px 14px;
+  }
+
+  .inscription-form {
+    padding: 22px 17px;
+    border-radius: 16px;
+  }
+
+  .inscription-header h1 {
+    font-size: 1.9rem;
+  }
+}
